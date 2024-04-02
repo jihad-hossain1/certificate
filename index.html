@@ -1,35 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Certificate</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fit Cirtificate</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- lato font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="preload" href="Lato-BoldItalic.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- custom css -->
+  <!-- <link href="css/style.css" rel="stylesheet"> -->
+  <style>
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+    @font-face {
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+      font-family: 'Rockwell';
+      src: url('Rockwell.eot');
+      src: url('Rockwell.eot?#iefix') format('embedded-opentype'),
+        url('Rockwell.woff2') format('woff2'),
+        url('Rockwell.woff') format('woff'),
+        url('Rockwell.ttf') format('truetype');
+
+    }
+
+
+    @font-face {
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+      font-family: 'Times New Roman';
+      src: url('TimesNewRomanPSMT.eot');
+      src: url('TimesNewRomanPSMT.eot?#iefix') format('embedded-opentype'),
+        url('TimesNewRomanPSMT.woff2') format('woff2'),
+        url('TimesNewRomanPSMT.woff') format('woff'),
+        url('TimesNewRomanPSMT.ttf') format('truetype');
+    }
+  </style>
 </head>
 
-<body class="min-h-screen">
+<body>
 
-    <main class="relative " style="font-family:  Poppins sans-serif; font-weight: 500;font-style: normal;">
-        <img src="fitr.png" class="object-cover" alt="">
-        <div class="absolute z-10 top-[44%] left-[42%]">
-            <h4 class="text-center text-2xl font-semibold mb-2">
-                Md Saydul Islam
-            </h4>
-        </div>
-        <div class="absolute z-10 left-32 pl-7 bottom-24 pb-3">
-            <h4 class="font-semibold text-sm flex flex-col">
-                <span class="font-bold">Date of Issue: </span>
-                <span>12/12/2023</span>
-            </h4>
-        </div>
-        </div>
+  <main>
+    <div class="w-full m-auto max-w-[1000px]"><!-- start inner main container -->
+      <div class="max-w-[100%] min-h-[500px] relative p-[7%_6%_5%]"><!-- start inner container -->
+        <img class="w-full absolute top-0 left-0" src="images/bg.png" alt="bg" />
+
+        <div class="relative"><!-- start header html -->
+          <div class="w-[30%] float-left">
+            <div class="max-w-[60%]"><a href="#"><img src="images/logo.png" alt="" /></a></div>
+          </div>
+          <div class="float-left w-[40%] pt-[55px]">
+            <h1 class="m-auto">
+              <img src="images/cirtificate_img.png" alt="">
+            </h1>
+          </div>
+          <div class="w-[30%] float-right text-right">
+            <div class="font-semibold text-sm">Ref : <span>37092/3975</span></div>
+          </div>
+        </div><!-- end header html -->
+
+        <div class="clear-both relative text-center"><!-- start main content html -->
+          <p class="text-[#231f20] text-[32px] pt-[10px] pb-[5%] font-['Rockwell']">This Certificate is Proudly
+            Presented to </p>
+          <div
+            class="m-auto text-[#022735] max-w-[55%] text-[34px] min-h-[41px] pb-[5px] font-semibold font-['Rockwell'] border-b border-[#3b4e57]">
+            Md:
+            Muradujjaman</div>
+          <p class="text-[#231f20] text-[20px] text-left leading-[29px] p-[20px_20px_0px] font-['Times New Roman']">Has
+            Successfully Completed
+            the
+            Requirements to be
+            Recognized as a FUTURE IT &amp; LANGUAGE
+            TRAINING INSTITUTE Certifietd in Digital Marketing and having found Competent.</p>
+        </div><!-- end main content html -->
+
+        <div class="clear-both flex pt-[9%] relative"><!-- start footer html -->
+          <div class="w-[28%] float-left pl-[2%] pt-[26px] self-center font-semibold text-sm">
+            <div class="issue">Date of Issue:</div>
+            <div class="date">06/11/2022</div>
+          </div>
+          <div class="w-[30%] float-left pt-[17px] self-center text-center flex flex-col items-center">
+            <p class="min-h-[15px] mb-[5px] relative pb-[2px] font-semibold text-sm">
+              signature</p>
+            <!-- <div class="w-[54%] bg-black h-[1px] "></div> -->
+            <p class="font-semibold text-sm border-t border-[#3b4e57]">Authorized signature
+            </p>
+          </div>
+          <div class="w-[20%] float-left text-right self-center ml-20">
+            <a href="#"><img class="max-w-[70%] " src="images/logo_digital_bangladesh.png" alt="" /></a>
+          </div>
+          <div class="w-[20%] float-left text-center"><img class="max-w-[70%]" src="images/cirtified.png" alt="" />
+          </div>
+        </div><!-- end footer html -->
+
+      </div><!-- end inner container -->
+    </div><!-- end inner main container -->
+  </main>
+
+  <script src="https://cdn.tailwindcss.com"></script>
 </body>
 
 </html>
